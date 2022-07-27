@@ -25,7 +25,7 @@ data.forEach(version => {
       let calculatorPage = new CalculatorPage(page);
       await page.goto('https://testsheepnz.github.io/BasicCalculator');
       await page.selectOption('#selectBuild', { label: version });
-      await calculatorPage.fillInData();
+      await calculatorPage.fillInDataNumbers();
       await page.selectOption('#selectOperationDropdown', { label: 'Add' });
       await page.locator('#calculateButton').click();
 
@@ -36,7 +36,7 @@ data.forEach(version => {
       let calculatorPage = new CalculatorPage(page);
       await page.goto('https://testsheepnz.github.io/BasicCalculator');
       await page.selectOption('#selectBuild', { label: version });
-      await calculatorPage.fillInData();
+      await calculatorPage.fillInDataNumbers();
       await page.selectOption('#selectOperationDropdown', { label: 'Subtract' });
       await page.locator('#calculateButton').click();
 
@@ -47,7 +47,7 @@ data.forEach(version => {
       let calculatorPage = new CalculatorPage(page);
       await page.goto('https://testsheepnz.github.io/BasicCalculator');
       await page.selectOption('#selectBuild', { label: version });
-      await calculatorPage.fillInData();
+      await calculatorPage.fillInDataNumbers();
       await page.selectOption('#selectOperationDropdown', { label: 'Multiply' });
       await page.locator('#calculateButton').click();
 
@@ -58,7 +58,7 @@ data.forEach(version => {
       let calculatorPage = new CalculatorPage(page);
       await page.goto('https://testsheepnz.github.io/BasicCalculator');
       await page.selectOption('#selectBuild', { label: version });
-      await calculatorPage.fillInData();
+      await calculatorPage.fillInDataNumbers();
       await page.selectOption('#selectOperationDropdown', { label: 'Divide' });
       await page.locator('#calculateButton').click();
 
@@ -69,7 +69,7 @@ data.forEach(version => {
       let calculatorPage = new CalculatorPage(page);
       await page.goto('https://testsheepnz.github.io/BasicCalculator');
       await page.selectOption('#selectBuild', { label: version });
-      await calculatorPage.fillInData();
+      await calculatorPage.fillInDataNumbers();
       await page.selectOption('#selectOperationDropdown', { label: 'Concatenate' });
       await page.locator('#calculateButton').click();
 

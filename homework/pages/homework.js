@@ -8,7 +8,7 @@ class CalculatorPage {
         await this.page.goto('https://testsheepnz.github.io/BasicCalculator');
     }
 
-    async fillInData(a = '10', b = '5') {
+    async fillInDataNumbers(a = '10', b = '5') {
         await this.page.locator('#number1Field').type(a);
         await this.page.locator('#number2Field').type(b);
     }
